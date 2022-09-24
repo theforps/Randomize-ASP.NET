@@ -2,9 +2,22 @@
 
 <form method="post">
     <div class="mainTable">
-        <div class="resultText">@Model.result</div>
+        @if (@Model != null)
+         {
+            <div class="resultText">@Model.result</div>
+        }
+        else
+        {
+            <div class="resultText">0</div>
+        }
+        
+        <div class="tableWithRange">
+            <input type="number" placeholder="-10000" class="range" max="10000" min="-10000" asp-for="numberOne"/>
+            <input type="number" placeholder="10000" class="range" max="10000" min="-10000" asp-for="numberTwo"/>
+         </div>
 
-        <input type="submit" value="Generate"/>
+         <input class="generateBut" type="submit" value="Generate" asp-action="Main"/>
+        
     </div>
 
 </form>

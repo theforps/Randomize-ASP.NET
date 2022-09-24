@@ -7,11 +7,8 @@ namespace Randomize.Controllers
     public class MainController : Controller
     {
         //get
-        [HttpGet]
         public ActionResult Main()
         {
-
-
             return View();
         }
 
@@ -20,12 +17,11 @@ namespace Randomize.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Main(Digits digit)
         {
-            digit.numberOne = -100;
-            digit.numberTwo = 100;
-
-            Random rand = new Random();
-
-            digit.result = rand.Next(digit.numberOne, digit.numberTwo);
+            if (ModelState.IsValid)
+            {
+                Random rand = new Random();
+                digit.result = rand.Next(digit.numberOne, digit.numberTwo);
+            }
 
             return View(digit);
         }
