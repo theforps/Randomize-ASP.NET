@@ -8,18 +8,13 @@ namespace Randomize.Controllers
     {
         //get
         [HttpGet]
-        public ActionResult Main(Digits digit)
+        public ActionResult Main()
         {
-            digit.numberOne = -100;
-            digit.numberTwo = 100;
 
-            Random rand = new Random();
 
-            digit.result = rand.Next(digit.numberOne, digit.numberTwo);
-
-            return View(digit);
+            return View();
         }
-        /*
+
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -33,6 +28,6 @@ namespace Randomize.Controllers
             digit.result = rand.Next(digit.numberOne, digit.numberTwo);
 
             return View(digit);
-        }*/
+        }
     }
 }

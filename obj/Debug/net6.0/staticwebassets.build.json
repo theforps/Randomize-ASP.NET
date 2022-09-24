@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WnoGa6Zy/KusqHReSzMoN8XyK6FGBHGXbn+K/74tGeo=",
+  "Hash": "BSwiJMdcYsz1kr+XSTVyFs0k1pFdLIyL8o4QggS1WNk=",
   "Source": "Randomize",
   "BasePath": "_content/Randomize",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\thefo\\Desktop\\vs project\\Randomize\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Randomize.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\thefo\\Desktop\\vs project\\Randomize\\wwwroot\\css\\myStyles.css",
+      "SourceId": "Randomize",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thefo\\Desktop\\vs project\\Randomize\\wwwroot\\",
+      "BasePath": "_content/Randomize",
+      "RelativePath": "css/myStyles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\myStyles.css"
     },
     {
       "Identity": "C:\\Users\\thefo\\Desktop\\vs project\\Randomize\\wwwroot\\css\\site.css",

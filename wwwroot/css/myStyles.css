@@ -1,0 +1,13 @@
+﻿.mainTable {
+    background-color: gainsboro;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 500px;
+    vertical-align: middle;
+}
+
+.resultText {
+    text-align:center;
+    padding: 70px;
+    font-size: 90px;
+}
