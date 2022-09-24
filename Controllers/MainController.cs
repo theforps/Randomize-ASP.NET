@@ -7,17 +7,31 @@ namespace Randomize.Controllers
     public class MainController : Controller
     {
         //get
-        public ActionResult Main()
+        public ActionResult Main(Digits digit)
         {
-            return View();
-        }
+            digit.numberOne = -100;
+            digit.numberTwo = 100;
 
+            Random rand = new Random();
+
+            digit.result = rand.Next(digit.numberOne, digit.numberTwo);
+
+            return View(digit);
+        }
+        /*
         //post
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Main(Digits digit)
         {
-            return View();
-        }
+            digit.numberOne = -100;
+            digit.numberTwo = 100;
+
+            Random rand = new Random();
+
+            digit.result = rand.Next(digit.numberOne, digit.numberTwo);
+
+            return View(digit);
+        }*/
     }
 }

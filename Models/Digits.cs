@@ -9,9 +9,9 @@ namespace Randomize.Models
     public class Digits
     {
         
-        int numberOne { get; set; }
-        int numberTwo { get; set; }
+        public int numberOne { get; set; }
+        public int numberTwo { get; set; }
 
-        int result { get; set; }
+        public int result { get; set; }
     }
 }
