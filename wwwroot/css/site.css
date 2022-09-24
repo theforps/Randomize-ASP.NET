@@ -16,3 +16,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+header {
+    text-align:center;
+    font-size: 150px;
+    padding: 20px 0px 20px 0px;
+    font-weight: 500;
+}
+

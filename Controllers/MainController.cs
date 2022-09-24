@@ -7,6 +7,7 @@ namespace Randomize.Controllers
     public class MainController : Controller
     {
         //get
+        [HttpGet]
         public ActionResult Main(Digits digit)
         {
             digit.numberOne = -100;
