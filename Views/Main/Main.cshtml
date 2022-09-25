@@ -12,6 +12,7 @@
         }
         
         <div class="tableWithRange">
+            <span asp-validation-for="numberOne" asp-validation-for="numberTwo"/>
             <input type="number" placeholder="-10000" class="range" max="10000" min="-10000" asp-for="numberOne"/>
             <input type="number" placeholder="10000" class="range" max="10000" min="-10000" asp-for="numberTwo"/>
          </div>

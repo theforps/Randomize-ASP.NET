@@ -20,7 +20,7 @@ namespace Randomize.Controllers
             if (ModelState.IsValid)
             {
                 Random rand = new Random();
-                digit.result = rand.Next(digit.numberOne, digit.numberTwo);
+                digit.result = rand.Next(digit.numberOne, digit.numberTwo+1);
             }
 
             return View(digit);
