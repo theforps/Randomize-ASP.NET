@@ -15,10 +15,8 @@
         <div class="tableWithRange">
             
             <input type="number" placeholder="-10000" class="range" max="10000" min="-10000" asp-for="numberOne"/>
-            <span asp-validation-for="numberOne" />
             
             <input type="number" placeholder="10000" class="range" max="10000" min="-10000" asp-for="numberTwo"/>
-            <span asp-validation-for="numberTwo" />
          </div>
 
          <input class="generateBut" type="submit" value="Generate" asp-action="Main"/>
