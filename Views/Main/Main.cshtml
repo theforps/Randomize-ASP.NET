@@ -15,11 +15,11 @@
         }
         
         <div class="tableWithRange">
-
+            <label style="padding: 10px; font-size: 20px; font-weight: 600;">[-10000;10000]</label>
             <span asp-validation-for="numberOne" class="text-danger" style="font-weight: 600; font-size: 20px;"></span>
-            <input type="number" placeholder="-10000" class="range" max="10000" min="-10000" asp-for="numberOne"/>
+            <input type="number" placeholder="min" class="range" max="10000" min="-10000" asp-for="numberOne"/>
             <span asp-validation-for="numberTwo" class="text-danger" style="font-weight: 600; font-size: 20px;"></span>
-            <input type="number" placeholder="10000" class="range" max="10000" min="-10000" asp-for="numberTwo"/>
+            <input type="number" placeholder="max" class="range" max="10000" min="-10000" asp-for="numberTwo"/>
 
             <input class="generateBut" type="submit" value="Generate" asp-action="Main"/>
          </div>
