@@ -18,7 +18,7 @@ namespace Randomize.Controllers
         {
             if (digit.numberTwo == digit.numberOne)
                 ModelState.AddModelError("numberOne", "The numbers are equal");
-            else if (digit.numberTwo > digit.numberOne)
+            else if (digit.numberTwo < digit.numberOne)
                 ModelState.AddModelError("numberOne", "Incorrectly entered numbers in the range");
 
             if (ModelState.IsValid)
