@@ -1,6 +1,8 @@
 ﻿@model Randomize.Models.Digits
 
 <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
 
     <div class="mainTable" >
         @if (@Model != null)
@@ -13,17 +15,21 @@
         }
         
         <div class="tableWithRange">
-            
+            <span asp-validation-for="numberOne" class="text-danger" style="font-weight: 600;"></span>
             <input type="number" placeholder="-10000" class="range" max="10000" min="-10000" asp-for="numberOne"/>
-            
+            <span asp-validation-for="numberTwo" class="text-danger" style="font-weight: 600;"></span>
             <input type="number" placeholder="10000" class="range" max="10000" min="-10000" asp-for="numberTwo"/>
-         </div>
 
-         <input class="generateBut" type="submit" value="Generate" asp-action="Main"/>
+            <input class="generateBut" type="submit" value="Generate" asp-action="Main"/>
+         </div>
         
     </div>
 
 </form>
+
+@section Scripts {
+    @{ <partial name ="_ValidationScriptsPArtial"/>}
+}
 
 
 
